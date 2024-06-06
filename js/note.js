@@ -25,7 +25,7 @@ const renderNotes = () => {
     noteList.innerHTML = ''
     notes.map((note, index) => {
         const listItem = document.createElement('li')
-        listItem.className = 'list-group-item d-flex mt-4'
+        listItem.className = 'list-group-item mt-2 d-flex justify-content-between'
         listItem.innerHTML = `${note} <button type='button' class='btn btn-danger btn-sm' data-index='${index}'>Remove Note</button>`
         noteList.appendChild(listItem)
     })
